@@ -1,0 +1,2 @@
+The current version of rikaitan-export in this folder was built:
+25 September 2023
