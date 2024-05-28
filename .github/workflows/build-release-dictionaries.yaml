@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install atool
+      - name: Install atool # atool is needed to extract the rikaitan-import binaries
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
           packages: atool
