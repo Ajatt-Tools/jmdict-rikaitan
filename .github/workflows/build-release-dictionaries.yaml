@@ -13,6 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install atool
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: atool
+          version: 1.0
+
       - name: Get Current Date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"

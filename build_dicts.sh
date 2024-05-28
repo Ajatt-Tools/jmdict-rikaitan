@@ -1,9 +1,11 @@
-# This script is copied from https://github.com/Ajatt-Tools/rikaitan-import/blob/main/scripts/build_dicts.sh with little modifications.
-
 #!/bin/bash
 
-mkdir -p src
-mkdir -p dst
+# This script is copied from https://github.com/Ajatt-Tools/rikaitan-import/blob/main/scripts/build_dicts.sh with little modifications.
+
+set -euxo pipefail
+
+mkdir -p -- src
+mkdir -p -- dst
 
 function refresh_source () {
     NOW=$(date '+%s')
@@ -16,6 +18,21 @@ function refresh_source () {
     fi
 }
 
+function get_rikaitan_import() {
+	local -r name="rikaitan-import-linux"
+	local -r latest_zip="https://github.com/Ajatt-Tools/rikaitan-import/releases/latest/download/$name.zip"
+	curl -Ls --output-dir binaries -O -- "$latest_zip"
+	atool -f --extract-to=binaries -- binaries/*zip
+	mv -f -- binaries/**/* binaries/
+	rm -r -- "binaries/$name" binaries/*zip
+}
+
+if ! [[ -d binaries ]]; then
+	echo "binaries dir doesn't exist!"
+	exit 1
+fi
+
+get_rikaitan_import
 refresh_source "JMdict_e_examp"
 ./binaries/rikaitan -language="english_extra" -title="JMdict" src/JMdict_e_examp dst/JMdict_english_with_examples.zip
 
