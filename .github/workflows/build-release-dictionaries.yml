@@ -25,7 +25,6 @@ jobs:
 
       - name: Run Build Dicts Script
         run: |
-          chmod +x ./binaries/rikaitan
           bash build_dicts.sh
 
       - name: Create Release

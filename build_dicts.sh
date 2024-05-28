@@ -36,6 +36,7 @@ if ! [[ -d binaries ]]; then
 fi
 
 get_rikaitan_import
+chmod +x -- ./binaries/rikaitan
 refresh_source "JMdict_e_examp"
 ./binaries/rikaitan -language="english_extra" -title="JMdict" src/JMdict_e_examp dst/JMdict_english_with_examples.zip
 
