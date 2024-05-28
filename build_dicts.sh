@@ -19,6 +19,9 @@ function refresh_source () {
 }
 
 function get_rikaitan_import() {
+	if [[ -f binaries/rikaitan ]]; then
+		return
+	fi
 	local -r name="rikaitan-import-linux"
 	local -r latest_zip="https://github.com/Ajatt-Tools/rikaitan-import/releases/latest/download/$name.zip"
 	curl -Ls --output-dir binaries -O -- "$latest_zip"
