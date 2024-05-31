@@ -1,4 +1,4 @@
-# JMdict for Rikaitan
+# JMdict for Rikaitan <!-- omit in toc -->
 
 ![](https://img.shields.io/github/v/tag/Ajatt-Tools/jmdict-rikaitan?style=for-the-badge&label=Last%20Release)
 
@@ -6,16 +6,15 @@ This repository contains automatically generated dictionaries for use with [Rika
 
 This repository is automatically updated daily and the dictionary files are built from JMdict using the [Rikaitan Import](https://github.com/Ajatt-Tools/rikaitan-import) tool.
 
-- [JMdict for Rikaitan](#jmdict-for-rikaitan)
-  - [Downloads](#downloads)
-    - [JMdict for Rikaitan](#jmdict-for-rikaitan-1)
-    - [JMnedict for Rikaitan](#jmnedict-for-rikaitan)
-    - [KANJIDIC for Rikaitan](#kanjidic-for-rikaitan)
-  - [FAQ](#faq)
-    - [Legacy vs Extra/Regular JMdict](#legacy-vs-extraregular-jmdict)
-    - [How Often Should I Update?](#how-often-should-i-update)
-  - [Acknowledgements](#acknowledgements)
-  - [License](#license)
+- [Downloads](#downloads)
+  - [JMdict for Rikaitan](#jmdict-for-rikaitan)
+  - [JMnedict for Rikaitan](#jmnedict-for-rikaitan)
+  - [KANJIDIC for Rikaitan](#kanjidic-for-rikaitan)
+- [FAQ](#faq)
+  - [Legacy vs Extra/Regular JMdict](#legacy-vs-extraregular-jmdict)
+  - [How Often Should I Update?](#how-often-should-i-update)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Downloads
 
@@ -68,7 +67,7 @@ The terminology of "Extra" is confusing since it implies that the extra version 
 
 ### How Often Should I Update?
 
-- The **JMdict** project [is quite active](https://www.edrdg.org/jmwsgi/updates.py?svc=jmdict&i=1) so we recommend you update your JMdict files every few months as lots of entries are added and improved upon every single day by contributers. You can even [contribute yourself here](https://www.edrdg.org/jmwsgi/edhelpq.py?svc=jmdict&sid=).
+- The **JMdict** project [is quite active](https://www.edrdg.org/jmwsgi/updates.py?svc=jmdict&i=1) so we recommend you update your JMdict files every few months as lots of entries are added and improved upon every single day by contributers. You can even [contribute to the project here](https://www.edrdg.org/jmwsgi/edhelpq.py?svc=jmdict&sid=).
 
 - The **JMnedict** project is [also somewhat active](https://www.edrdg.org/jmwsgi/updates.py?svc=jmdict&i=1) although arguably less relevant.
 
@@ -78,3 +77,5 @@ The terminology of "Extra" is confusing since it implies that the extra version 
 
 The code in this repository is licensed under the GNU AGPL.
 The released dictionaries are licensed under the [Creative Commons Attribution-ShareAlike Licence (V4.0)](https://creativecommons.org/licenses/by-sa/4.0/) that [JMdict is](https://www.edrdg.org/edrdg/licence.html).
+
+This repository uses the [JMdict/EDICT](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project) and [KANJIDIC](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project) dictionary files. These files are the property of the [Electronic Dictionary Research and Development Group](https://www.edrdg.org/), and are used in conformance with the Group's licence.
