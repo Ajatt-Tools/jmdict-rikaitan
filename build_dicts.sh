@@ -1,11 +1,17 @@
 #!/bin/bash
 
-# This script is copied from https://github.com/Ajatt-Tools/rikaitan-import/blob/main/scripts/build_dicts.sh with little modifications.
+# This script is copied from
+# https://github.com/Ajatt-Tools/rikaitan-import/blob/main/scripts/build_dicts.sh
+# with little modifications.
 
 set -euxo pipefail
 
+readonly name="rikaitan-import-linux"
+readonly latest_zip="https://github.com/Ajatt-Tools/rikaitan-import/releases/latest/download/$name.zip"
+
 mkdir -p -- src
 mkdir -p -- dst
+mkdir -p -- binaries
 
 function refresh_source () {
     NOW=$(date '+%s')
@@ -22,18 +28,10 @@ function get_rikaitan_import() {
 	if [[ -f binaries/rikaitan ]]; then
 		return
 	fi
-	local -r name="rikaitan-import-linux"
-	local -r latest_zip="https://github.com/Ajatt-Tools/rikaitan-import/releases/latest/download/$name.zip"
 	curl -Ls --output-dir binaries -O -- "$latest_zip"
-	atool -f --extract-to=binaries -- binaries/*zip
-	mv -f -- binaries/**/* binaries/
-	rm -r -- "binaries/$name" binaries/*zip
+	unzip -j binaries/*zip -d binaries
+	rm -r -- binaries/*zip
 }
-
-if ! [[ -d binaries ]]; then
-	echo "binaries dir doesn't exist!"
-	exit 1
-fi
 
 get_rikaitan_import
 chmod +x -- ./binaries/rikaitan
