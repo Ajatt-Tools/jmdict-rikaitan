@@ -2,3 +2,10 @@ dst
 src
 binaries/rikaitan*
 *.gz
+
+JMdict.gz
+JMdict_e_examp.gz
+JMnedict.xml.gz
+kanjidic2.xml.gz
+
+rikaitan-import-linux.zip
