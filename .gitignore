@@ -1,2 +1,4 @@
 dst
 src
+binaries/rikaitan*
+*.gz
