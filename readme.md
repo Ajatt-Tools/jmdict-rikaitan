@@ -16,6 +16,11 @@ This repository is automatically updated daily and the dictionary files are buil
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
+## Set up Rikaitan
+
+If you are new to Rikaitan, read
+[Setting up Rikaitan](https://tatsumoto.neocities.org/blog/setting-up-yomichan).
+
 ## Downloads
 
 The download links below will always point toward the latest release.
