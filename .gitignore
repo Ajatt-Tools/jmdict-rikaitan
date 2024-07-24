@@ -1,7 +1,8 @@
 dst
-src
-binaries/rikaitan*
 *.gz
+data
+tmp
+binaries
 
 JMdict.gz
 JMdict_e_examp.gz
@@ -9,3 +10,5 @@ JMnedict.xml.gz
 kanjidic2.xml.gz
 
 rikaitan-import-linux.zip
+
+node_modules
