@@ -13,6 +13,7 @@ This repository is automatically updated daily and the dictionary files are buil
 - [FAQ](#faq)
   - [Legacy vs Extra/Regular JMdict](#legacy-vs-extraregular-jmdict)
   - [How Often Should I Update?](#how-often-should-i-update)
+  - [漢字使い参考 vs JMdict Forms](#漢字使い参考-vs-jmdict-forms)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -77,6 +78,10 @@ The terminology of "Extra" is confusing since it implies that the extra version 
 - The **JMnedict** project is [also somewhat active](https://www.edrdg.org/jmwsgi/updates.py?svc=jmdict&i=1) although arguably less relevant.
 
 - The **KANJIDIC** project [does not appear to be as active](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project), so it is probably fine not to update it.
+
+### 漢字使い参考 vs JMdict Forms
+
+There is a very old version of the JMdict Forms dictionary floating around under the name 漢字使い参考 dating back to 2021 or so. We recommend you update to the latest version of JMdict Forms from that so that you get the benefits of the latest JMdict data.
 
 ## License
 
