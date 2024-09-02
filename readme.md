@@ -1,6 +1,7 @@
 # JMdict for Rikaitan <!-- omit in toc -->
 
-[![](https://img.shields.io/github/v/tag/Ajatt-Tools/jmdict-rikaitan?style=for-the-badge&label=Last%20Release)](#downloads)
+[![Download](https://img.shields.io/github/v/tag/Ajatt-Tools/jmdict-rikaitan?style=for-the-badge&label=Last%20Release)](#downloads)
+[![Chat](https://img.shields.io/badge/chat-join-green?style=for-the-badge&logo=Element&logoColor=green)](https://tatsumoto.neocities.org/blog/join-our-community)
 
 This repository contains automatically generated dictionaries for use with [Rikaitan](https://github.com/Ajatt-Tools/rikaitan), a free Japanese dictionary browser extension. They are built using information from the [JMdict](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project) project, which is a freely available Japanese dictionary maintained by the [Electronic Dictionary Research and Development Group](http://www.edrdg.org/). There are also releases for [JMnedict](https://www.edrdg.org/enamdict/enamdict_doc.html) and [KANJIDIC](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project), which are respectively a Japanese proper names dictionary and a kanji dictionary.
 
