@@ -39,6 +39,10 @@ refresh_source "JMdict_e_examp"
 
 ./binaries/rikaitan -language="english_extra" -title="JMdict" data/JMdict_e_examp dst/JMdict_english_with_examples.zip
 
+refresh_source "JMdict_b"
+./binaries/rikaitan -language="english_extra" -format="edict" -title="JMdict"          data/JMdict_b dst/JMdict_english_without_proper_names.zip
+./binaries/rikaitan -language="english"       -format="edict" -title="JMdict (Legacy)" data/JMdict_b dst/JMdict_english_legacy_without_proper_names.zip
+
 refresh_source "JMdict"
 ./binaries/rikaitan -language="english_extra" -title="JMdict"         data/JMdict dst/JMdict_english.zip
 ./binaries/rikaitan -language="english"   -title="JMdict (Legacy)"    data/JMdict dst/JMdict_english_legacy.zip
